@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/rocket_finsB.obj-9f0892a2514b26e76a187719a8396580.mesh"
+
+[deps]
+
+files=[ "res://.import/rocket_finsB.obj-9f0892a2514b26e76a187719a8396580.mesh" ]
+
+source_file="res://spacekit_2/Models/OBJ format/rocket_finsB.obj"
+dest_files=[ "res://.import/rocket_finsB.obj-9f0892a2514b26e76a187719a8396580.mesh", "res://.import/rocket_finsB.obj-9f0892a2514b26e76a187719a8396580.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/rock_largeA.obj-fe9ef98d8ba4a204c5881f32d8d80b2e.mesh"
+
+[deps]
+
+files=[ "res://.import/rock_largeA.obj-fe9ef98d8ba4a204c5881f32d8d80b2e.mesh" ]
+
+source_file="res://spacekit_2/Models/OBJ format/rock_largeA.obj"
+dest_files=[ "res://.import/rock_largeA.obj-fe9ef98d8ba4a204c5881f32d8d80b2e.mesh", "res://.import/rock_largeA.obj-fe9ef98d8ba4a204c5881f32d8d80b2e.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

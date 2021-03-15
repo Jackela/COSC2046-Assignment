@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/corridor_roof.obj-563e4fca84afa5517b18684bf253de1e.mesh"
+
+[deps]
+
+files=[ "res://.import/corridor_roof.obj-563e4fca84afa5517b18684bf253de1e.mesh" ]
+
+source_file="res://spacekit_2/Models/OBJ format/corridor_roof.obj"
+dest_files=[ "res://.import/corridor_roof.obj-563e4fca84afa5517b18684bf253de1e.mesh", "res://.import/corridor_roof.obj-563e4fca84afa5517b18684bf253de1e.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

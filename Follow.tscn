@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Follow.gd" type="Script" id=1]
+[ext_resource path="res://Enemy.tscn" type="PackedScene" id=2]
+
+[node name="Follow" type="PathFollow2D"]
+position = Vector2( 1178.05, -6.4744 )
+rotation = 1.55148
+loop = false
+script = ExtResource( 1 )
+
+[node name="UFO" type="Area2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( 6.53455, -3.05249 )

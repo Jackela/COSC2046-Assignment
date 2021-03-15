@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/rail_corner.obj-086de76d1a27bc29ac3ebc00ee142d10.mesh"
+
+[deps]
+
+files=[ "res://.import/rail_corner.obj-086de76d1a27bc29ac3ebc00ee142d10.mesh" ]
+
+source_file="res://spacekit_2/Models/OBJ format/rail_corner.obj"
+dest_files=[ "res://.import/rail_corner.obj-086de76d1a27bc29ac3ebc00ee142d10.mesh", "res://.import/rail_corner.obj-086de76d1a27bc29ac3ebc00ee142d10.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

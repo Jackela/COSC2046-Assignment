@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/desk_computerScreen.obj-e9503b2d6827f822575ee6b8e6a3cf78.mesh"
+
+[deps]
+
+files=[ "res://.import/desk_computerScreen.obj-e9503b2d6827f822575ee6b8e6a3cf78.mesh" ]
+
+source_file="res://spacekit_2/Models/OBJ format/desk_computerScreen.obj"
+dest_files=[ "res://.import/desk_computerScreen.obj-e9503b2d6827f822575ee6b8e6a3cf78.mesh", "res://.import/desk_computerScreen.obj-e9503b2d6827f822575ee6b8e6a3cf78.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

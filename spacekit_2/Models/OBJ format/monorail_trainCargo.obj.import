@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/monorail_trainCargo.obj-0c9cd10cb8b9495e3ec0f49fa181233d.mesh"
+
+[deps]
+
+files=[ "res://.import/monorail_trainCargo.obj-0c9cd10cb8b9495e3ec0f49fa181233d.mesh" ]
+
+source_file="res://spacekit_2/Models/OBJ format/monorail_trainCargo.obj"
+dest_files=[ "res://.import/monorail_trainCargo.obj-0c9cd10cb8b9495e3ec0f49fa181233d.mesh", "res://.import/monorail_trainCargo.obj-0c9cd10cb8b9495e3ec0f49fa181233d.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

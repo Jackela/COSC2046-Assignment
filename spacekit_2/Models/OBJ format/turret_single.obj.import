@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/turret_single.obj-3051ed0b9e07efe953197e32a7e2dcdc.mesh"
+
+[deps]
+
+files=[ "res://.import/turret_single.obj-3051ed0b9e07efe953197e32a7e2dcdc.mesh" ]
+
+source_file="res://spacekit_2/Models/OBJ format/turret_single.obj"
+dest_files=[ "res://.import/turret_single.obj-3051ed0b9e07efe953197e32a7e2dcdc.mesh", "res://.import/turret_single.obj-3051ed0b9e07efe953197e32a7e2dcdc.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

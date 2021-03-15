@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/meteor.obj-8096256ce44738c067615a58811c510c.mesh"
+
+[deps]
+
+files=[ "res://.import/meteor.obj-8096256ce44738c067615a58811c510c.mesh" ]
+
+source_file="res://spacekit_2/Models/OBJ format/meteor.obj"
+dest_files=[ "res://.import/meteor.obj-8096256ce44738c067615a58811c510c.mesh", "res://.import/meteor.obj-8096256ce44738c067615a58811c510c.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true
