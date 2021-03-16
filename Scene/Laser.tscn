@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Assets/laserBlue02.png" type="Texture" id=1]
+[ext_resource path="res://Scene/Laser.gd" type="Script" id=2]
+
+[node name="Laser" type="Area2D"]
+rotation = -0.00872665
+script = ExtResource( 2 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+polygon = PoolVector2Array( 15.9007, 6.77734, 18.4956, 3.71582, 19.1577, -1.97879, 15.582, -6.34908, -13.8181, -6.34908, -16.7316, -5.02475, -18.3208, -2.64096, -18.3208, 3.31852, -17.3937, 5.17258, -16.4426, 6.57891 )
+
+[node name="Sprite" type="Sprite" parent="."]
+texture = ExtResource( 1 )
