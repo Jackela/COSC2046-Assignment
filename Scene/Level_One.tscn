@@ -119,9 +119,9 @@ __meta__ = {
 [node name="Panel" type="Panel" parent="UI"]
 anchor_right = 1.003
 anchor_bottom = 1.0
-margin_left = 1450.0
-margin_top = 6.10352e-05
+margin_left = 1447.0
 margin_right = 0.23999
+margin_bottom = 6.99512
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -230,5 +230,5 @@ __meta__ = {
 [node name="Turrets" type="Node2D" parent="."]
 
 [node name="Core" parent="." instance=ExtResource( 15 )]
-[connection signal="timeout" from="UI/Panel/WaveTimer/WaveTimer" to="." method="_on_SpawnTimer_timeout"]
 [connection signal="timeout" from="UI/Panel/WaveTimer/WaveTimer" to="UI/Panel/WaveTimer" method="_on_WaveTimer_timeout"]
+[connection signal="timeout" from="UI/Panel/WaveTimer/WaveTimer" to="." method="_on_SpawnTimer_timeout"]
