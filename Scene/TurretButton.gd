@@ -27,6 +27,6 @@ func _on_TurretButton_pressed() -> void:
 	var newTurret = turret.instance()
 	var price = newTurret.get_price()
 	if level.get_cash() >= price:
-		get_tree().get_root().get_node("Level_One/Turrets").add_child(newTurret)
+		level.add_child(newTurret)
 		newTurret.set_global_position(get_global_mouse_position())
 		level.subtract_cash(price)

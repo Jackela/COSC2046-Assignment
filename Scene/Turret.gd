@@ -9,7 +9,7 @@ export var price = 50
 
 onready var ShootTimer = $ShootTimer
 
-
+var mouse_over = false
 var Laser = preload("res://Scene/Laser.tscn")
 var enemy_arr = []
 var type = "turret"
@@ -22,7 +22,6 @@ var target = null #curret track target
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	pass
-
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
 	if if_follow:
