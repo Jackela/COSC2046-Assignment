@@ -84,6 +84,7 @@ func _on_Turret_area_exited(area: Area2D) -> void:
 func _shoot() -> void:
 	var laser = Laser.instance()
 	laser.transform = $Sprite/Gun.transform
+	
 	$Sprite/Base.add_child(laser)
 	
 func _stop_follow() -> void:

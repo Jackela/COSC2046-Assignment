@@ -19,7 +19,7 @@ func _ready() -> void:
 func _on_Core_area_entered(area: Area2D) -> void:
 	if area.get_type() == "enemy":
 		var level = self.get_tree().get_root().get_node("Level_One")
-		level.damaged(1)
+		level.damaged(10)
 		area.queue_free()
 
 func get_type() -> String:

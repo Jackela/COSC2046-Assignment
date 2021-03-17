@@ -1,0 +1,22 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Buttons/QuitButton.gd" type="Script" id=1]
+[ext_resource path="res://Assets/Masked Hero.ttf" type="DynamicFontData" id=2]
+
+
+[sub_resource type="DynamicFont" id=1]
+size = 60
+font_data = ExtResource( 2 )
+
+[node name="QuitButton" type="Button"]
+margin_left = -700.0
+margin_top = -40.1944
+margin_right = -345.492
+margin_bottom = 106.806
+custom_fonts/font = SubResource( 1 )
+text = "Quit"
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+scene_to_load = "res://Scene/TitleScreen.tscn"

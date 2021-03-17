@@ -5,6 +5,9 @@ export var HP = 10
 export var cash = 50
 export var waves = 10
 
+
+
+var wave_counter = 0
 var points = 0
 var timer = 5
 var number = 5
@@ -12,29 +15,33 @@ var mobsRemain = 0
 var valid_tiles
 var enemy = preload("res://Scene/Follow.tscn")
 
+
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	mobsRemain = number
 	valid_tiles = $TileMap.get_used_cells()
 
 func _process(delta: float) -> void:
-	
-	if ! HP >= 0:
-		pass
-	timer += delta
-	if self.waves >= 0:
-		if timer >= spawnTime and mobsRemain > 0:
-			var newEnemy = enemy.instance()
-			get_node("Route").add_child(newEnemy)
-			timer = 0
-			mobsRemain -= 1
+	if HP > 0:
+		timer += delta
+		if self.waves >= 0:
+			if timer >= spawnTime and mobsRemain > 0:
+				var newEnemy = enemy.instance()
+				self.get_node("Route").add_child(newEnemy)
+				timer = 0
+				mobsRemain -= 1
+	else:
+		var game_over = load("res://Scene/GameOver.tscn")
+		self.add_child(game_over.instance())
 
 func run_next_wave():
 	if self.spawnTime >= 0:
 		self.spawnTime -= 1
 	self.number += 1
 	self.mobsRemain = number
+	
 	self.waves -= 1
+	self.wave_counter += 1
 	
 func damaged(value: int) -> void:
 	HP -= value

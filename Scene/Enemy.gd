@@ -2,7 +2,7 @@ extends Area2D
 
 export var value = 25
 export var point = 10
-var HP = 15
+var HP = 30
 var type = "enemy"
 
 # Called when the node enters the scene tree for the first time.
@@ -41,3 +41,9 @@ func _destroyed() -> bool:
 
 func get_type() -> String :
 	return type
+
+func set_HP(HP: int) -> void:
+	self.HP = HP
+	
+func get_HP() -> int:
+	return self.HP
