@@ -9,6 +9,7 @@ export var price = 50
 
 onready var ShootTimer = $ShootTimer
 
+
 var mouse_over = false
 var Laser = preload("res://Scene/Laser.tscn")
 var enemy_arr = []
@@ -25,8 +26,9 @@ func _ready() -> void:
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
 	if if_follow:
-		set_global_position(get_global_mouse_position())#follow the mouse
-	
+		self.set_global_position(get_global_mouse_position())#follow the mouse
+			
+		
 	if built:
 		_track_enemy()#track "enemy" type
 		
@@ -57,9 +59,20 @@ func _on_Turret_area_entered(area: Area2D) -> void:
 func _input(event: InputEvent) -> void:
 	#track mouse input if click, drop the turrent and set its "built" to true
 	if event is InputEventMouseButton:
+		var level = self.get_tree().get_root().get_node("Level_One")
+		var tile_map = level.get_node("TileMap")
 		if event.is_pressed():
-			_stop_follow()
-			_build()
+			var tile = tile_map.world_to_map(event.position)
+		
+			if tile in level.valid_tiles:		
+				_stop_follow()
+				_build()
+				level.valid_tiles.erase(tile)
+				var pos = (tile * Vector2(64, 64)) + Vector2(32, 32)
+				self.set_global_position(pos)
+				
+				tile_map.set_visibility(false)
+			
 	
 func _on_Turret_area_exited(area: Area2D) -> void:
 	# when "enenmy" target leave the area, remove it from the array

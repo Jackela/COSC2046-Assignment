@@ -1,4 +1,4 @@
-[gd_scene load_steps=24 format=2]
+[gd_scene load_steps=27 format=2]
 
 [ext_resource path="res://Assets/layers/decor_4.png" type="Texture" id=1]
 [ext_resource path="res://Assets/layers/road_4.png" type="Texture" id=2]
@@ -15,6 +15,24 @@
 [ext_resource path="res://Scene/CashCounter.gd" type="Script" id=13]
 [ext_resource path="res://Scene/HP_value.gd" type="Script" id=14]
 [ext_resource path="res://Scene/Core.tscn" type="PackedScene" id=15]
+[ext_resource path="res://Assets/grid.png" type="Texture" id=16]
+[ext_resource path="res://Scene/TileMap.gd" type="Script" id=17]
+
+[sub_resource type="TileSet" id=1]
+0/name = "grid.png 0"
+0/texture = ExtResource( 16 )
+0/tex_offset = Vector2( 0, 0 )
+0/modulate = Color( 1, 1, 1, 1 )
+0/region = Rect2( 0, 0, 64, 64 )
+0/tile_mode = 0
+0/occluder_offset = Vector2( 0, 0 )
+0/navigation_offset = Vector2( 0, 0 )
+0/shape_offset = Vector2( 0, 0 )
+0/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+0/shape_one_way = false
+0/shape_one_way_margin = 0.0
+0/shapes = [  ]
+0/z_index = 0
 
 [sub_resource type="Curve2D" id=2]
 _data = {
@@ -67,41 +85,44 @@ texture = ExtResource( 3 )
 [node name="Road" type="Node2D" parent="Map"]
 
 [node name="road_5" type="Sprite" parent="Map/Road"]
-position = Vector2( 214.75, -412 )
+position = Vector2( 222.607, -400.775 )
 texture = ExtResource( 6 )
 
 [node name="road_6" type="Sprite" parent="Map/Road"]
-position = Vector2( 214.75, -170.442 )
+position = Vector2( 222.607, -159.217 )
 texture = ExtResource( 6 )
 
 [node name="road_7" type="Sprite" parent="Map/Road"]
-position = Vector2( 214.75, 73.2343 )
+position = Vector2( 222.607, 84.4589 )
 texture = ExtResource( 6 )
 
 [node name="road_4" type="Sprite" parent="Map/Road"]
-position = Vector2( 174.49, 329.234 )
+position = Vector2( 182.347, 340.459 )
 texture = ExtResource( 2 )
 
 [node name="road_8" type="Sprite" parent="Map/Road"]
-position = Vector2( -79.781, 375.744 )
+position = Vector2( -71.9237, 386.969 )
 texture = ExtResource( 5 )
 
 [node name="road_9" type="Sprite" parent="Map/Road"]
-position = Vector2( -331.933, 373.625 )
+position = Vector2( -324.076, 384.85 )
 texture = ExtResource( 5 )
 
 [node name="road_10" type="Sprite" parent="Map/Road"]
-position = Vector2( -581.967, 375.744 )
+position = Vector2( -574.11, 386.969 )
 texture = ExtResource( 5 )
 
 [node name="road_11" type="Sprite" parent="Map/Road"]
-position = Vector2( -832, 375.744 )
+position = Vector2( -824.143, 386.969 )
 texture = ExtResource( 5 )
 
 [node name="TileMap" type="TileMap" parent="."]
+tile_set = SubResource( 1 )
 collision_layer = 2
 collision_mask = 2
 format = 1
+tile_data = PoolIntArray( 16, 0, 0, 20, 0, 0, 131088, 0, 0, 131092, 0, 0, 262160, 0, 0, 262164, 0, 0, 262170, 0, 0, 393232, 0, 0, 393236, 0, 0, 524304, 0, 0, 524308, 0, 0, 655376, 0, 0, 655380, 0, 0, 786435, 0, 0, 786437, 0, 0, 786439, 0, 0, 786441, 0, 0, 786443, 0, 0, 786445, 0, 0, 786447, 0, 0, 786452, 0, 0, 917523, 0, 0, 1048579, 0, 0, 1048581, 0, 0, 1048583, 0, 0, 1048585, 0, 0, 1048587, 0, 0, 1048589, 0, 0, 1048591, 0, 0, 1048593, 0, 0, 1114137, 0, 0, 1114138, 0, 0, 1114139, 0, 0, 1114140, 0, 0, 1114141, 0, 0, 1179665, 0, 0, 1179666, 0, 0, 1179667, 0, 0, 1179668, 0, 0, 1179669, 0, 0, 1179670, 0, 0, 1179671, 0, 0, 1179672, 0, 0, 1245196, 0, 0, 1245197, 0, 0, 1245198, 0, 0, 1245199, 0, 0, 1245200, 0, 0 )
+script = ExtResource( 17 )
 
 [node name="Route" type="Path2D" parent="."]
 curve = SubResource( 2 )

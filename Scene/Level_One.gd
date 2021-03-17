@@ -9,13 +9,13 @@ var points = 0
 var timer = 5
 var number = 5
 var mobsRemain = 0
-
+var valid_tiles
 var enemy = preload("res://Scene/Follow.tscn")
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	mobsRemain = number
-
+	valid_tiles = $TileMap.get_used_cells()
 
 func _process(delta: float) -> void:
 	
