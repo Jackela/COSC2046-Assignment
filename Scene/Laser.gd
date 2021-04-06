@@ -12,16 +12,12 @@ func _ready() -> void:
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
-	
+	# move the laser obj each delta time
 	self.position += transform.x * speed * delta
-
-
-
-func _on_Area2D_area_entered(area: Area2D) -> void:
-	pass
 	
-func _on_Area2D_area_exited(area: Area2D) -> void:
-	pass
+
+
+
 func get_type() -> String:
 	return self.type
 

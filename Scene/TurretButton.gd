@@ -22,10 +22,12 @@ func _process(delta: float) -> void:
 
 
 func _on_TurretButton_pressed() -> void:
+	#when click turret button
 	var level = self.get_tree().get_root().get_node("Level_One")
 	var tile_map = level.get_node("TileMap")
 	var newTurret = turret.instance()
 	var price = newTurret.get_price()
+	# with adequte cash get a new turret
 	if level.get_cash() >= price:
 		level.add_child(newTurret)
 		newTurret.set_global_position(get_global_mouse_position())

@@ -8,6 +8,7 @@ func _ready() -> void:
 	pass # Replace with function body.
 
 func _process(delta: float) -> void:
+	#set offset
 	set_offset(get_offset() + delta * speed)
 	
 

@@ -18,6 +18,7 @@ func _process(delta: float) -> void:
 
 
 func _on_WaveTimer_timeout() -> void:
+	#count time
 	if ! elapsed >= seconds:
 		elapsed += 1
 	else:

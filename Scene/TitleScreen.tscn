@@ -17,11 +17,11 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="back" type="Sprite" parent="."]
+[node name="Back" type="Sprite" parent="."]
 position = Vector2( 957.951, 534.927 )
 texture = ExtResource( 6 )
 
-[node name="Asteroid" type="Sprite" parent="back"]
+[node name="Asteroid" type="Sprite" parent="Back"]
 position = Vector2( 536.94, 15.7071 )
 scale = Vector2( 1.40232, 1.40232 )
 texture = ExtResource( 7 )
@@ -63,6 +63,6 @@ __meta__ = {
 position = Vector2( 100, 95 )
 texture = ExtResource( 5 )
 
-[node name="mainMenuBGM" type="AudioStreamPlayer" parent="."]
+[node name="MainMenuBGM" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 8 )
 autoplay = true

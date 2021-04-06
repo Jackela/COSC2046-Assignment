@@ -13,6 +13,7 @@ func _ready() -> void:
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
 	if _destroyed():
+		#earn some resources when destory the enemy
 		var level = self.get_tree().get_root().get_node("Level_One")
 		level.add_point(point)
 		level.add_cash(value)
@@ -27,7 +28,8 @@ func _on_UFO_area_entered(area: Area2D) -> void:
 
 
 func _on_UFO_area_exited(area: Area2D) -> void:
-	pass # Replace with function body.
+	if area.get_type() == "bullet":
+		area.queue_free()
 
 func damaged(dmg: int) -> void:
 	self.HP -= dmg

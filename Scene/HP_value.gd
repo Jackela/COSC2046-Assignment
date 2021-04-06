@@ -13,4 +13,5 @@ func _ready() -> void:
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
+	#set HP
 	self.set_text(str(self.get_tree().get_root().get_node("Level_One").get_HP()))

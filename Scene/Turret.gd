@@ -82,6 +82,7 @@ func _on_Turret_area_exited(area: Area2D) -> void:
 		area.queue_free()
 		
 func _shoot() -> void:
+	#generate new laser and make it follow the "Gun"
 	var laser = Laser.instance()
 	laser.transform = $Sprite/Gun.transform
 	

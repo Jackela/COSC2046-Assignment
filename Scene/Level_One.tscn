@@ -263,5 +263,5 @@ __meta__ = {
 [node name="Level_BGM" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource( 18 )
 autoplay = true
-[connection signal="timeout" from="UI/Panel/WaveTimer/WaveTimer" to="." method="_on_SpawnTimer_timeout"]
 [connection signal="timeout" from="UI/Panel/WaveTimer/WaveTimer" to="UI/Panel/WaveTimer" method="_on_WaveTimer_timeout"]
+[connection signal="timeout" from="UI/Panel/WaveTimer/WaveTimer" to="." method="_on_SpawnTimer_timeout"]

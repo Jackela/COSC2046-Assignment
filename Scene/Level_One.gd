@@ -23,8 +23,11 @@ func _ready() -> void:
 
 func _process(delta: float) -> void:
 	if HP > 0:
+		# hp > 0 
 		timer += delta
+		#count the time 
 		if self.waves >= 0:
+			#when still waves existed generate more enemies
 			if timer >= spawnTime and mobsRemain > 0:
 				var newEnemy = enemy.instance()
 				self.get_node("Route").add_child(newEnemy)
@@ -35,6 +38,7 @@ func _process(delta: float) -> void:
 		self.add_child(game_over.instance())
 
 func run_next_wave():
+	#when timeout generate next wave
 	if self.spawnTime >= 0:
 		self.spawnTime -= 1
 	self.number += 1

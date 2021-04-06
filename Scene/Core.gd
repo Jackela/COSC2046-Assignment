@@ -15,9 +15,10 @@ func _ready() -> void:
 #func _process(delta: float) -> void:
 #	pass
 
-
+#when another obj enter the area
 func _on_Core_area_entered(area: Area2D) -> void:
 	if area.get_type() == "enemy":
+		#if entered is a enemy, the core will be damaged
 		var level = self.get_tree().get_root().get_node("Level_One")
 		level.damaged(10)
 		area.queue_free()
