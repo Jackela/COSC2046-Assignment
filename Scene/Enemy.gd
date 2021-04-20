@@ -2,7 +2,7 @@ extends Area2D
 
 export var value = 25
 export var point = 10
-var HP = 30
+var HP = 15
 var type = "enemy"
 
 # Called when the node enters the scene tree for the first time.

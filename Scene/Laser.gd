@@ -17,11 +17,12 @@ func _process(delta: float) -> void:
 	
 
 
-
+# the method for getting type of the bojce
 func get_type() -> String:
 	return self.type
 
 func play_sound_effect() -> void:
+	# when laser obj shot, play the sound effect
 	$SoundEffect.play()
 	
 # Called every frame. 'delta' is the elapsed time since the previous frame.

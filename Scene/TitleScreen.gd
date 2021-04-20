@@ -14,4 +14,5 @@ func _ready() -> void:
 
 
 func _on_button_pressed(scene_to_load) -> void:
+	#load scene
 	get_tree().change_scene(scene_to_load)

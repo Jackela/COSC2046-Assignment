@@ -63,14 +63,14 @@ func _input(event: InputEvent) -> void:
 		var tile_map = level.get_node("TileMap")
 		if event.is_pressed():
 			var tile = tile_map.world_to_map(event.position)
-		
+			#if the turret on the white blocks
 			if tile in level.valid_tiles:		
 				_stop_follow()
 				_build()
 				level.valid_tiles.erase(tile)
 				var pos = (tile * Vector2(64, 64)) + Vector2(32, 32)
 				self.set_global_position(pos)
-				
+				#make the turret built and invisible the blocks
 				tile_map.set_visibility(false)
 			
 	
@@ -79,6 +79,7 @@ func _on_Turret_area_exited(area: Area2D) -> void:
 	if area.get_type() == "enemy":
 		enemy_arr.erase(area)
 	if area.get_type() == "bullet":
+		#bullet obj queue_free() when it hitted
 		area.queue_free()
 		
 func _shoot() -> void:

@@ -43,7 +43,7 @@ func run_next_wave():
 		self.spawnTime -= 1
 	self.number += 1
 	self.mobsRemain = number
-	
+	#adjust the left waves
 	self.waves -= 1
 	self.wave_counter += 1
 	
@@ -52,16 +52,18 @@ func damaged(value: int) -> void:
 	
 	
 	
-	
+#several .get() mehtods
 func get_HP() -> int:
 	return self.HP
 
 func get_point() -> int:
 	return self.points
 
+# methods for change data when some activites happened
 func add_point(value: int) -> void:
 	if value >= 0:
 		self.points += value
+		
 func subtract_point(value: int) -> void:
 	if value >= 0:
 		self.points -= value
